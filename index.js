@@ -23,15 +23,9 @@ client.on('message', msg => {
 
   const args = msg.content.split(' ');
   const command = args[1];
-  
-  // 명령어에 붙은 args가 2개 이상이면 message 전달 후 무시
-  if (args.length !== 2) {
-    msg.reply('1개만 붙여라');
-    return;
-  }
 
   try {
-    client.commands.get(command).execute(msg);
+    client.commands.get(command).execute(msg, args);
   } catch (error) {
     console.log(error)
     msg.reply('네 해드렸습니다.');

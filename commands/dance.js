@@ -1,7 +1,7 @@
 module.exports = {
 	name: '춤',
 	description: '쿵짝쿵짝',
-	execute(msg) {
+	execute(msg, args) {
         Promise.all([
             msg.react('🍎'),
             msg.react('🍊'),
