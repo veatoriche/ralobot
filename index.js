@@ -23,6 +23,7 @@ client.on('message', msg => {
 
   const args = msg.content.split(' ');
   const command = args[1];
+  
   // 명령어에 붙은 args가 2개 이상이면 message 전달 후 무시
   if (args.length !== 2) {
     msg.reply('1개만 붙여라');
@@ -30,7 +31,7 @@ client.on('message', msg => {
   }
 
   try {
-    client.commands.get(command).execute(msg, '');
+    client.commands.get(command).execute(msg);
   } catch (error) {
     console.log(error)
     msg.reply('네 해드렸습니다.');
@@ -43,7 +44,7 @@ client.on('guildMemberAdd', member => {
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member
-    channel.send(`${member}.... 자~ 드가자~...`);
+    channel.send(`${member} 어서오고.`);
   });
 
 client.login(token);
