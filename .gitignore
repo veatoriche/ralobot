@@ -132,4 +132,4 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/yarn,node
 
 # Add token.json
-token.json
+config.json
