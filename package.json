@@ -1,0 +1,9 @@
+{
+  "name": "ralobot",
+  "version": "1.0.0",
+  "description": "ralobot for discord",
+  "main": "index.js",
+  "repository": "https://github.com/veatoriche/ralobot",
+  "author": "Jihwan Kim <noneobj@gmail.com>",
+  "license": "MIT"
+}
