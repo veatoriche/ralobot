@@ -7,6 +7,8 @@
   "author": "Jihwan Kim <noneobj@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
   }
 }
