@@ -11,7 +11,25 @@ const smileTemplate = new Discord.MessageEmbed()
 			.setColor('#FF3399')
 			.setImage('https://s3.orbi.kr/data/file/united2/ddfbb85604c94b198f580eb21bf27283.jpeg');
 
+const leftTemplate = new Discord.MessageEmbed()
+			.setTitle('췌아')
+			.setColor('#FF3399')
+			.setImage('https://d1oylbhrqjzo71.cloudfront.net/files/177b5f5c-ac08-4d78-8622-b8c121f11096.jpg?w=550');
+
+const frontTemplate = new Discord.MessageEmbed()
+			.setTitle('췌아')
+			.setColor('#FF3399')
+			.setImage('https://s3.orbi.kr/data/file/united2/ddfbb85604c94b198f580eb21bf27283.jpeg');
+
+const rightTemplate = new Discord.MessageEmbed()
+			.setTitle('췌아')
+			.setColor('#FF3399')
+			.setImage('https://image5jvqbd.fmkorea.com/files/attach/new/20191210/494354581/1787964531/2476139622/f8000518d133a8e2376db61f9307a772.jpg');
+
 module.exports = {
 	scar: scarTemplate,
-	smile: smileTemplate
+	smile: smileTemplate,
+	left: leftTemplate,
+	right: rightTemplate,
+	front: frontTemplate
 }
