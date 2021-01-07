@@ -1,11 +1,11 @@
 const http = require('request-promise')
-const config = require('../config.json')
+require('dotenv').config();
 
 const options = {
   url: "https://www.googleapis.com/youtube/v3/playlistItems",
   method: 'GET',
   qs: {
-    key: config.key,
+    key: process.env.KEY,
     playlistId: 'UUD2YO_A_PVMgMDN9jpRrpVA',
     maxResults: 50,
     part: 'contentDetails'

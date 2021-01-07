@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const fs = require('fs');
+require('dotenv').config();
 
-const {token, prefix} = require("./config.json");
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 const client = new Discord.Client();
@@ -19,7 +19,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   // 작성자가 봇이거나 prefix가 붙지 않은 명령어 무시
-  if (!msg.content.startsWith(prefix) || msg.author.bot) return;
+  if (!msg.content.startsWith(process.env.PREFIX) || msg.author.bot) return;
 
   const args = msg.content.split(' ');
   const command = args[1];
@@ -41,4 +41,4 @@ client.on('guildMemberAdd', member => {
     channel.send(`${member} 어서오고.`);
   });
 
-client.login(token);
+client.login(process.env.TOKEN);
