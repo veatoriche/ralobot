@@ -23,10 +23,10 @@ module.exports = {
 
       messageBody = `**${args[2]}의 가격 정보**\n\n`
 
-      messageBody += `*00시 기준 시가* : **${resultJson.data.opening_price}KRW**\n`
-      messageBody += `*00시 기준 종가* : **${resultJson.data.closing_price}KRW**\n`
-      messageBody += `*00시 기준 고가* : **${resultJson.data.max_price}KRW**\n`
-      messageBody += `*00시 기준 저가* : **${resultJson.data.min_price}KRW**\n`
+      messageBody += `*00시 기준 시가* : **${resultJson.data.opening_price} KRW**\n`
+      messageBody += `*00시 기준 종가* : **${resultJson.data.closing_price} KRW**\n`
+      messageBody += `*00시 기준 고가* : **${resultJson.data.max_price} KRW**\n`
+      messageBody += `*00시 기준 저가* : **${resultJson.data.min_price} KRW**\n`
       msg.channel.send(messageBody);
     } catch (e) {
       console.log(e);
